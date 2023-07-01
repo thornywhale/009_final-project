@@ -1,0 +1,167 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./../images/back.jpg);
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  color: transparent;
+  align-items: center;
+}
+h2{
+  font-size: smaller;
+}
+h1, h2{
+  padding: 0;
+  margin: 0;
+
+  animation-name: anim01;
+  animation-duration: 5s;
+  animation-delay: 0.5s;
+}
+@keyframes anim01{
+  0%{
+    color: transparent;
+  }
+  20%{
+    color: rgb(70, 126, 109);
+  }
+  45%{
+    color: #926239;
+  }
+  100%{
+    color: transparent;
+  }
+}
+button{
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  color: #926239;
+  padding: 5px 10px;
+  border: 1px solid #926239;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+button:hover{
+  background-color: #926239;
+  color: white;
+  cursor: pointer;
+}
+.spantxt{
+  font-size: smaller;
+  font-weight: bolder;
+  margin-top: 4vh;
+  text-decoration: overline;
+  text-decoration-style: wavy;
+  text-decoration-color: #926239;
+  text-decoration-thickness: 30%;
+
+  animation-name: anim02;
+  animation-delay: 2s;
+  animation-duration: 5s;
+}
+@keyframes anim02{
+  8%{
+    text-decoration-style: wavy;
+  }
+  16%{
+    text-decoration-style: unset;
+  }
+  24%{
+    text-decoration-style: double;
+  }
+  32%{
+    text-decoration-style: unset;
+  }
+  40%{
+    text-decoration-style: double;
+  }
+  48%{
+    text-decoration-style: unset;
+  }
+  56%{
+    text-decoration-style: double;
+  }
+  64%{
+    text-decoration-style: unset;
+  }
+  94%{
+    text-decoration-style: double;
+  }
+  95%{
+    text-decoration-style: unset;
+  }
+  96%{
+    text-decoration-style: dashed;
+  }
+  97%{
+    text-decoration-style: double;
+  }
+  98%{
+    text-decoration-style: dashed;
+  }
+  99%{
+    text-decoration-style: unset;
+  }
+
+
+  0%{
+    color: transparent;
+  }
+  20%{
+    color: rgb(70, 126, 109);
+  }
+  45%{
+    color: #926239;
+  }
+  70%{
+    color: #926239;
+    text-decoration-color: cadetblue;
+  }
+  100%{
+    color: transparent;
+    text-decoration-color: #926239;
+    text-decoration-style: wavy;
+  }
+}
+.main-content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content{
+  display: flex;
+}
+.brown{
+  background-color: #926239;
+  color: white;
+}
+.white{
+  background-color: white;
+  color: #926239;
+}
+.padd{
+  padding: 20px;
+}
+
+
+
+@media screen and (max-width: 600px){
+  .footer-content{
+    flex-wrap: wrap;
+  }
+}
